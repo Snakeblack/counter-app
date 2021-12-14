@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-const CounterApp = ({ value }) => {
+const CounterApp = ({ value = 10 }) => {
 
     // hooks
     const [ counter, setCounter ] = useState( value ); // []
 
-    // handleAdd
     const handleAdd = (e) => {
         setCounter( (c) => c + 1 ); 
     }
